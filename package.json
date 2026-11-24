@@ -1,0 +1,55 @@
+{
+  "name": "fdic-bank-health-financials-mcp",
+  "version": "1.0.0",
+  "description": "FDIC bank health, financials, failed banks, and branch lookup MCP server: verify FDIC insurance, check Call Report assets, deposits, insured vs uninsured deposits, Tier 1 capital ratios, ROA/ROE, failed banks, and branches via the official FDIC BankFind Suite API. Hosted, no key.",
+  "type": "module",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "mcpName": "io.github.theluckystrike/fdic-bank-health-financials-mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theluckystrike/fdic-bank-health-financials-mcp"
+  },
+  "homepage": "https://www.mcpstamp.com/free-servers/",
+  "bin": {
+    "fdic-bank-health-financials-mcp": "dist/stdio.js"
+  },
+  "main": "dist/stdio.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test",
+    "start": "node dist/stdio.js",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "fdic",
+    "banking",
+    "bank-financials",
+    "failed-banks",
+    "call-report",
+    "fintech",
+    "treasury",
+    "open-data",
+    "cloudflare-workers"
+  ]
+}
