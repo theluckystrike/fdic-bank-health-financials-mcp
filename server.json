@@ -3,11 +3,12 @@
   "name": "io.github.theluckystrike/fdic-bank-health-financials-mcp",
   "title": "FDIC Bank Health & Financials MCP",
   "description": "FDIC bank insurance status, Call Report financials, Tier 1 capital, failed banks, and branch lookup.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "url": "https://github.com/theluckystrike/fdic-bank-health-financials-mcp",
     "source": "github"
   },
+  "websiteUrl": "https://www.mcpstamp.com/free-servers/fdic-bank-health-financials-mcp/",
   "remotes": [
     {
       "type": "streamable-http",
